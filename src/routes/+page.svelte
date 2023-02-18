@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import LedDigit from '../lib/LedDigit.svelte';
+</script>
+
+<div class="container">
+	{#each Array(4) as _, i}
+		<LedDigit />
+	{/each}
+</div>
+
+<style>
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+</style>
