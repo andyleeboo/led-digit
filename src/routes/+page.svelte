@@ -9,9 +9,15 @@
 </div>
 
 <style>
+	:global(body) {
+		margin: 0;
+		padding: 0;
+		background-color: #1a1a1a;
+	}
 	.container {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
+		padding: 20px;
 	}
 </style>
